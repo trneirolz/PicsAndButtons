@@ -2,45 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Большая книга CSS</title>
-<link href="styles.css" rel="stylesheet">
-</head> 
-
-<body>
-<header>
-	<div class="head-nav">
-	<ul class="nav">
-		<li><a href="/infomation.html/">Информация</a></li>
-		<li><a href="/news.html/">Новости</a></li>
-		<li><a href="/price-list.html/">Прайс-лист</a></li>
-		<li><a href="/store.html/">Магазин</a></li>
-		<li><a href="/contacts.html/">Контакты</a></li>
-	</ul>
-	</div>
-	<div class="enter">
-		Вход
-		</div>
-</header>
-<!--Начало основного блока -->
+<title>Pics and Buttons</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
 <script type="text/javascript">
-    function changeImage(a) {
+	   function changeImage(a) {
         document.getElementById("img").src=a;
     }
 </script>
-<div id="main_img">
-    <img id="img" src="http://placehold.it/110x110">
-</div>
-<div id="thumb_img">
-    <div width="50px" height="100px" style="background-color: #efefef;"  onclick='changeImage("http://placehold.it/120x60");'>1</div>
-    <div width="50px" height="100px" style="background-color: #555555;"  onclick='changeImage("http://placehold.it/130x60");'>3</div>
-    <div width="50px" height="100px" style="background-color: #888888;"  onclick='changeImage("http://placehold.it/140x60");'>2</div>
-</div>
-
-<div class="main-content">
-	<div class="main-logo">
-		<img src="LOGO"></img>
-	</div>
-<!--Вводная информация -->	
+</head> 
+<body>
+<header>
+	<p>Who is there?</p>
+</header>
+<main>
+<ul>
+		<li><input type="button" class="button_1"   onclick='changeImage("Pics/KO.jpg");' value="KO-KO-KO"></div></li>
+		<li><input type="button" class="button_2"   onclick='changeImage("Pics/MU.jpg");' value="MU--MU-MU"></div></li>
+		<li><input type="button" class="button_3"   onclick='changeImage("Pics/KR.jpg");' value="KR-KR-KRYA"></div></li>
+</ul>
 	
+<div id="main_img">
+    <img id="img" src="Pics/what.png">
+</div>
+</main>
+
 </body>
 </html>
