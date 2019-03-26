@@ -40,13 +40,13 @@ body {
 }
 
 
-header {
-	width:25%;
-	margin: 20px auto;
-	padding-left: 10px;
+.main_header {
+	text-align: center;
+	padding: 20px;
 
 }
-header p {
+
+.headline {
 	margin: 0 auto;
 	font-size: 3em;
 	font-weight: bold;
@@ -66,21 +66,20 @@ main {
 }
 
 
-li {
+.buttons_list li {
 	width: 250px;
 	margin: 0 auto;
 	list-style: none;
-	
 	display: block;
 }
 
-input[type="button"]{
+.buttons {
 	font-weight: bold;
 	font-size: 1.5em;
 	margin-bottom: 0.5em;
 }
 
-.button_1 {
+.yellow_button {
 	color: #C70039;
 	width: 250px;
 	height: 36px;
@@ -88,7 +87,7 @@ input[type="button"]{
 	border-radius: 10px;
 }
 
-.button_2 {
+.orange_button {
 	color: #FFC300;
 	width: 250px;
 	height: 46px;
@@ -96,7 +95,7 @@ input[type="button"]{
 	border-radius: 20px;
 }
 
-.button_3 {
+.red_button {
 	color: #FF5733;
 	width: 250px;
 	height: 56px;
@@ -104,7 +103,7 @@ input[type="button"]{
 	border-radius: 30px;
 }
 
-div #img {
+#main_img {
 	margin: 0 auto;
 	display: block;
 	border: 10px solid #FAFF6A;
