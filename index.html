@@ -17,30 +17,45 @@ function change_red() {
 		if (document.getElementById('red_button').onclick){
         document.getElementById("main_img").src="Pics/KR.jpg";}
 		}
-   
 
-var reply_click = function()
-{
-    alert("Button clicked, id "+this.id+", text"+this.innerHTML);
-}
-document.getElementById('1').onclick = reply_click;
-document.getElementById('2').onclick = reply_click;
-document.getElementById('3').onclick = reply_click;
 </script>
 </head> 
 <body>
-<header>
-	<p>Who is there?</p>
+<header class="main_header">
+  <h1 class="headline">Who is there?</h1>
 </header>
 <main>
-<ul>
-		<li><input type="button" class="button_1" id="yellow_button"  onclick='change_yellow();' value="KO-KO-KO"></div></li>
-		<li><input type="button" class="button_2" id="orange_button"  onclick='change_orange();' value="MU-MU-MU"></div></li>
-		<li><input type="button" class="button_3" id="red_button"  onclick='change_red();' value="KR-KR-KRYA"></div></li>
+<ul class="buttons_list">
+  <li>
+    <button
+  	  class="yellow_button buttons"
+	  id="yellow_button"
+	  onclick='change_yellow();'>
+	  KO-KO-KO
+	  </button>
+  </li>
+  <li>
+    <button
+	  class="orange_button buttons"
+      id="orange_button"
+      onclick='change_orange();'>
+	  MU-MU-MU
+	  </button>
+  </li>
+  <li>
+    <button 
+	  class="red_button buttons"
+	  id="red_button" 
+	  onclick='change_red();'>
+	  KR-KR-KRYA
+	  </button>
+  </li>
 </ul>
 	
 <div class="main_img">
-    <img id="main_img" src="Pics/what.png">
+  <img
+    id="main_img" 
+	src="Pics/what.png">
 </div>
 </main>
 
