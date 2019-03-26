@@ -5,9 +5,27 @@
 <title>Pics and Buttons</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <script type="text/javascript">
-	   function changeImage(a) {
-        document.getElementById("img").src=a;
-    }
+function change_yellow() {
+		if (document.getElementById('yellow_button').onclick){
+        document.getElementById("main_img").src="Pics/KO.jpg";}
+		}
+function change_orange() {
+		if (document.getElementById('orange_button').onclick){
+        document.getElementById("main_img").src="Pics/MU.jpg";}
+		}
+function change_red() {
+		if (document.getElementById('red_button').onclick){
+        document.getElementById("main_img").src="Pics/KR.jpg";}
+		}
+   
+
+var reply_click = function()
+{
+    alert("Button clicked, id "+this.id+", text"+this.innerHTML);
+}
+document.getElementById('1').onclick = reply_click;
+document.getElementById('2').onclick = reply_click;
+document.getElementById('3').onclick = reply_click;
 </script>
 </head> 
 <body>
@@ -16,13 +34,13 @@
 </header>
 <main>
 <ul>
-		<li><input type="button" class="button_1"   onclick='changeImage("Pics/KO.jpg");' value="KO-KO-KO"></div></li>
-		<li><input type="button" class="button_2"   onclick='changeImage("Pics/MU.jpg");' value="MU-MU-MU"></div></li>
-		<li><input type="button" class="button_3"   onclick='changeImage("Pics/KR.jpg");' value="KR-KR-KRYA"></div></li>
+		<li><input type="button" class="button_1" id="yellow_button"  onclick='change_yellow();' value="KO-KO-KO"></div></li>
+		<li><input type="button" class="button_2" id="orange_button"  onclick='change_orange();' value="MU-MU-MU"></div></li>
+		<li><input type="button" class="button_3" id="red_button"  onclick='change_red();' value="KR-KR-KRYA"></div></li>
 </ul>
 	
-<div id="main_img">
-    <img id="img" src="Pics/what.png">
+<div class="main_img">
+    <img id="main_img" src="Pics/what.png">
 </div>
 </main>
 
