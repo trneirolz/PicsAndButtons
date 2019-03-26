@@ -1,63 +1,56 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Pics and Buttons</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
-<script type="text/javascript">
-function change_yellow() {
-		if (document.getElementById('yellow_button').onclick){
-        document.getElementById("main_img").src="Pics/KO.jpg";}
-		}
-function change_orange() {
-		if (document.getElementById('orange_button').onclick){
-        document.getElementById("main_img").src="Pics/MU.jpg";}
-		}
-function change_red() {
-		if (document.getElementById('red_button').onclick){
-        document.getElementById("main_img").src="Pics/KR.jpg";}
-		}
-
-</script>
+  <meta 
+    charset="UTF-8">
+  <title>
+    Pics and Buttons
+  </title>
+  <link
+    rel="stylesheet" 
+	type="text/css" 
+	href="styles.css">
 </head> 
 <body>
-<header class="main_header">
-  <h1 class="headline">Who is there?</h1>
-</header>
-<main>
-<ul class="buttons_list">
-  <li>
-    <button
-  	  class="yellow_button buttons"
-	  id="yellow_button"
-	  onclick='change_yellow();'>
-	  KO-KO-KO
+  <header class="main_header">
+    <h1 class="headline">Who is there?</h1>
+  </header>
+  <main>
+  <ul class="buttons_list">
+    <li>
+      <button
+  	    class="yellow_button buttons"
+	    id="yellow_button"
+	    onclick='change_yellow();'>
+	    KO-KO-KO
 	  </button>
-  </li>
-  <li>
-    <button
-	  class="orange_button buttons"
-      id="orange_button"
-      onclick='change_orange();'>
-	  MU-MU-MU
+    </li>
+    <li>
+      <button
+	    class="orange_button buttons"
+        id="orange_button"
+        onclick='change_orange();'>
+	    MU-MU-MU
 	  </button>
-  </li>
-  <li>
-    <button 
-	  class="red_button buttons"
-	  id="red_button" 
-	  onclick='change_red();'>
-	  KR-KR-KRYA
+    </li>
+    <li>
+      <button 
+	    class="red_button buttons"
+	    id="red_button" 
+	    onclick='change_red();'>
+	    KR-KR-KRYA
 	  </button>
-  </li>
-</ul>
+    </li>
+  </ul>
 	
-<div class="main_img">
-  <img
-    id="main_img" 
-	src="Pics/what.png">
-</div>
-</main>
-
+  <div class="main_img">
+    <img
+      id="main_img" 
+	  src="Pics/what.png">
+  </div>
+  </main>
+  <script
+    src="scripts.js">
+  </script>
 </body>
 </html>
